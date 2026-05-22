@@ -8,10 +8,10 @@
   <style>
     body {
       font-family: Garamond, "EB Garamond", Georgia, "Times New Roman", serif;
-      max-width: 920px;
+      max-width: 960px;
       margin: 60px auto;
       padding: 0 24px;
-      line-height: 1.65;
+      line-height: 1.55;
       color: #222;
       background: #fff;
       font-size: 18px;
@@ -35,12 +35,12 @@
     .intro {
       display: flex;
       align-items: flex-start;
-      gap: 32px;
-      margin-bottom: 36px;
+      gap: 34px;
+      margin-bottom: 42px;
     }
 
     .profile-photo {
-      width: 170px;
+      width: 240px;
       height: auto;
       border-radius: 8px;
       object-fit: cover;
@@ -49,33 +49,45 @@
 
     .intro-text {
       flex: 1;
+      max-width: 650px;
     }
 
     h1 {
-      font-size: 2.1rem;
+      font-size: 2.55rem;
       margin: 0 0 0.25em 0;
       color: #111;
-      line-height: 1.25;
+      line-height: 1.15;
       font-weight: 700;
     }
 
-    h2 {
-      margin-top: 2em;
-      border-bottom: 1px solid #ddd;
-      padding-bottom: 0.3em;
-      color: #111;
-      font-size: 1.45rem;
+    .name-korean {
+      font-size: 1.25rem;
       font-weight: 700;
+      margin-bottom: 0.55em;
+      color: #111;
     }
 
     .subtitle {
       color: #555;
-      margin: 0 0 1.5em 0;
-      font-size: 1.05rem;
+      margin: 0 0 1.15em 0;
+      font-size: 1.02rem;
     }
 
     p {
-      margin: 0 0 1.1em 0;
+      margin: 0 0 0.95em 0;
+    }
+
+    h2 {
+      margin-top: 2.1em;
+      margin-bottom: 0.85em;
+      border-bottom: none;
+      padding-bottom: 0;
+      color: #111;
+      font-size: 1.08rem;
+      font-weight: 700;
+      font-variant: small-caps;
+      text-transform: lowercase;
+      letter-spacing: 0.04em;
     }
 
     a {
@@ -87,7 +99,7 @@
       text-decoration: underline;
     }
 
-    @media (max-width: 700px) {
+    @media (max-width: 760px) {
       body {
         margin: 32px auto;
         font-size: 17px;
@@ -95,16 +107,20 @@
 
       .intro {
         flex-direction: column;
-        gap: 20px;
+        gap: 22px;
       }
 
       .profile-photo {
         width: 100%;
-        max-width: 200px;
+        max-width: 240px;
       }
 
       h1 {
-        font-size: 1.8rem;
+        font-size: 2.05rem;
+      }
+
+      .name-korean {
+        font-size: 1.15rem;
       }
     }
   </style>
@@ -120,22 +136,23 @@
     <img src="jzh.jpg" alt="Jeongho Kim" class="profile-photo">
 
     <div class="intro-text">
-      <h1>김정호 / 金正浩 / Jeongho Kim</h1>
+      <h1>Jeongho Kim</h1>
+      <p class="name-korean">김정호 / 金正浩</p>
 
       <p class="subtitle">
         Political Science · Chinese Politics · Computational Social Science
       </p>
 
       <p>
-        I am a Research Assistant at the Sungkyun Institute of China Studies. 
-        I hold an M.A. in Political Science from Sungkyunkwan University and 
+        I am a Research Assistant at the Sungkyun Institute of China Studies.
+        I hold an M.A. in Political Science from Sungkyunkwan University and
         a B.A. in History from Fudan University.
       </p>
 
       <p>
-        I study elite politics, state–society relations, and authoritarian politics, 
-        with a focus on China. My research uses quantitative and computational methods, 
-        including text-as-data and large language models, to examine responsiveness, 
+        I study elite politics, state–society relations, and authoritarian politics,
+        with a focus on China. My research uses quantitative and computational methods,
+        including text-as-data and large language models, to examine responsiveness,
         governance, and political communication under authoritarian regimes.
       </p>
     </div>
@@ -143,9 +160,9 @@
 
   <h2>Publication</h2>
   <p>
-    Kim, Jeongho and Jonghyuk Lee. 2026. 
-    “Strategic Expression under Authoritarianism: Policy Sensitivity and 
-    Linguistic Variation in Online Petitions in China.” 
+    Kim, Jeongho and Jonghyuk Lee. 2026.
+    “Strategic Expression under Authoritarianism: Policy Sensitivity and
+    Linguistic Variation in Online Petitions in China.”
     <em>Journal of Global Politics</em> 19(1): 165–196. In Korean.
   </p>
 
