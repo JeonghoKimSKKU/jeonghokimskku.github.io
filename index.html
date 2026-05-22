@@ -6,30 +6,30 @@
   <title>Jeongho Kim</title>
 
   <style>
-
-    nav {
-  margin-bottom: 36px;
-  font-size: 0.95rem;
-}
-
-nav a {
-  margin-right: 18px;
-  color: #0645ad;
-  text-decoration: none;
-}
-
-nav a:hover {
-  text-decoration: underline;
-}
-    
     body {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
+      font-family: Garamond, "EB Garamond", Georgia, "Times New Roman", serif;
       max-width: 920px;
       margin: 60px auto;
       padding: 0 24px;
       line-height: 1.65;
       color: #222;
       background: #fff;
+      font-size: 18px;
+    }
+
+    nav {
+      margin-bottom: 36px;
+      font-size: 0.95rem;
+    }
+
+    nav a {
+      margin-right: 18px;
+      color: #0645ad;
+      text-decoration: none;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
     }
 
     .intro {
@@ -40,7 +40,7 @@ nav a:hover {
     }
 
     .profile-photo {
-      width: 220px;
+      width: 170px;
       height: auto;
       border-radius: 8px;
       object-fit: cover;
@@ -56,6 +56,7 @@ nav a:hover {
       margin: 0 0 0.25em 0;
       color: #111;
       line-height: 1.25;
+      font-weight: 700;
     }
 
     h2 {
@@ -63,6 +64,8 @@ nav a:hover {
       border-bottom: 1px solid #ddd;
       padding-bottom: 0.3em;
       color: #111;
+      font-size: 1.45rem;
+      font-weight: 700;
     }
 
     .subtitle {
@@ -87,6 +90,7 @@ nav a:hover {
     @media (max-width: 700px) {
       body {
         margin: 32px auto;
+        font-size: 17px;
       }
 
       .intro {
@@ -94,21 +98,11 @@ nav a:hover {
         gap: 20px;
       }
 
-   .profile-photo {
-  width: 170px;
-  height: auto;
-  border-radius: 8px;
-  object-fit: cover;
-  flex-shrink: 0;
-}
+      .profile-photo {
+        width: 100%;
+        max-width: 200px;
+      }
 
-@media (max-width: 700px) {
-  .profile-photo {
-    width: 100%;
-    max-width: 200px;
-  }
-}
-      
       h1 {
         font-size: 1.8rem;
       }
@@ -117,13 +111,11 @@ nav a:hover {
 </head>
 
 <body>
-
   <nav>
-  <a href="index.html">Home</a>
-  <a href="cv.html">CV</a>
-    
-</nav>
-  
+    <a href="index.html">Home</a>
+    <a href="cv.html">CV</a>
+  </nav>
+
   <div class="intro">
     <img src="jzh.jpg" alt="Jeongho Kim" class="profile-photo">
 
