@@ -4,20 +4,42 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Jeongho Kim</title>
+
   <style>
     body {
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
-      max-width: 820px;
+      max-width: 920px;
       margin: 60px auto;
       padding: 0 24px;
       line-height: 1.65;
       color: #222;
+      background: #fff;
+    }
+
+    .intro {
+      display: flex;
+      align-items: flex-start;
+      gap: 32px;
+      margin-bottom: 36px;
+    }
+
+    .profile-photo {
+      width: 220px;
+      height: auto;
+      border-radius: 8px;
+      object-fit: cover;
+      flex-shrink: 0;
+    }
+
+    .intro-text {
+      flex: 1;
     }
 
     h1 {
-      font-size: 2.2rem;
-      margin-bottom: 0.2em;
+      font-size: 2.1rem;
+      margin: 0 0 0.25em 0;
       color: #111;
+      line-height: 1.25;
     }
 
     h2 {
@@ -29,7 +51,12 @@
 
     .subtitle {
       color: #555;
-      margin-bottom: 2em;
+      margin: 0 0 1.5em 0;
+      font-size: 1.05rem;
+    }
+
+    p {
+      margin: 0 0 1.1em 0;
     }
 
     a {
@@ -41,32 +68,53 @@
       text-decoration: underline;
     }
 
-    ul {
-      padding-left: 1.3em;
+    @media (max-width: 700px) {
+      body {
+        margin: 32px auto;
+      }
+
+      .intro {
+        flex-direction: column;
+        gap: 20px;
+      }
+
+      .profile-photo {
+        width: 100%;
+        max-width: 280px;
+      }
+
+      h1 {
+        font-size: 1.8rem;
+      }
     }
   </style>
 </head>
 
 <body>
-  <img src="jzh.jpg" alt="Jeongho Kim" class="profile-photo">
-  <h1>김정호 / 金正浩 / Jeongho Kim</h1>
+  <div class="intro">
+    <img src="jzh.jpg" alt="Jeongho Kim" class="profile-photo">
 
-  <p class="subtitle">
-    Political Science · Chinese Politics · Computational Social Science
-  </p>
+    <div class="intro-text">
+      <h1>김정호 / 金正浩 / Jeongho Kim</h1>
 
-  <p>
-    I am a Research Assistant at the Sungkyun Institute of China Studies. 
-    I hold an M.A. in Political Science from Sungkyunkwan University and 
-    a B.A. in History from Fudan University.
-  </p>
+      <p class="subtitle">
+        Political Science · Chinese Politics · Computational Social Science
+      </p>
 
-  <p>
-    I study elite politics, state–society relations, and authoritarian politics, 
-    with a focus on China. My research uses quantitative and computational methods, 
-    including text-as-data and large language models, to examine responsiveness, 
-    governance, and political communication under authoritarian regimes.
-  </p>
+      <p>
+        I am a Research Assistant at the Sungkyun Institute of China Studies. 
+        I hold an M.A. in Political Science from Sungkyunkwan University and 
+        a B.A. in History from Fudan University.
+      </p>
+
+      <p>
+        I study elite politics, state–society relations, and authoritarian politics, 
+        with a focus on China. My research uses quantitative and computational methods, 
+        including text-as-data and large language models, to examine responsiveness, 
+        governance, and political communication under authoritarian regimes.
+      </p>
+    </div>
+  </div>
 
   <h2>Publication</h2>
   <p>
